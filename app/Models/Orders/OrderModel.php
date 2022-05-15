@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models\Orders;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class OrderModel extends Model
+{
+    use HasFactory;
+
+    protected $table = "orders";
+
+    public $incrementing = false;
+
+    public $timestamps = false;
+
+    protected $fillable = [
+      'ID',
+      'FIO',
+      'SUM',
+      'CREATED',
+      'ADDRESS'
+    ];
+}
